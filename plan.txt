@@ -1,5 +1,5 @@
 Game Logic:
-    - We have an NxN array that keeps track of numbers representin:
+    - We have an NxN array that keeps track of numbers representing:
         - A snake body cell with 1
         - A food with 2
         - Nothing with 0
