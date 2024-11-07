@@ -1,0 +1,18 @@
+Game Logic:
+    - We have an NxN array that keeps track of numbers representin:
+        - A snake body cell with 1
+        - A food with 2
+        - Nothing with 0
+    - We keep track of the head position, tail position (x,y coordinates) and direction in variables
+    - We create a game loop that each N ms:
+        - moves the snake head from current position to its direction
+        - and updates head's position
+        - deletes the value at tail position
+        - and updates it based on the non-empty side next to it
+    - Each time the snake eats a food, a new one spawns
+    - The user can input arrow keys before tick and the last one specifies the diretion (or defaults if none pressed)
+
+    Result of movements:
+    - If the head moves out of bounds OR the snake moves into a cell with its own body - GAME OVER
+    - If the snake eats a food it grows, meaning:
+        - the tail doesn't get deleted
